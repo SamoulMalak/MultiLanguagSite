@@ -1,6 +1,10 @@
 # MultiLanguagSite
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+![review]
+![1]
+![1e]
+![1a]
 
 ## Development server
 
