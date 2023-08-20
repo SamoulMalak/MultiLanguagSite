@@ -12,9 +12,13 @@ This project is divided into modules
 <br>
 to achieve a single principle
 <br>
+
 ![review](https://github.com/SamoulMalak/MultiLanguagSite/assets/108104669/992511e4-644c-4c90-8e8e-2085649416a8)
+<br>
 ![1](https://github.com/SamoulMalak/MultiLanguagSite/assets/108104669/a390bdf4-5a51-4dae-b500-bdc4205830a0)
+<br>
 ![1e](https://github.com/SamoulMalak/MultiLanguagSite/assets/108104669/c3c522dd-6f0f-4842-937c-66edfba0a7cc)
+<br>
 ![1a](https://github.com/SamoulMalak/MultiLanguagSite/assets/108104669/909383ac-e22e-4c69-b473-c3cb57735508)
 
 ## Development server
