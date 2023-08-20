@@ -1,0 +1,124 @@
+<form class="m-4" [formGroup]="formGroup" (ngSubmit)="AddEmployee()" [dir]="pageDirection">
+    <!-- <div class="form-group">
+    
+      <input  type="number" class="form-control"   [value]="GenerateNextId" id="eId" name="eId" formControlName="Id"  />
+    </div> -->
+    <div class="form-group">
+      <label class="control-label" translate=>Name</label>
+      <div class="input-group">
+          <input type="text" class="form-control" id="cName" name="cName" formControlName="Name"
+          [class.is-valid]="Name.valid"   [class.is-invalid]="Name.invalid && Name.touched" />
+          <div class="input-group-append" [hidden]="Name.untouched || !Name.valid" >
+              <span class="input-group-text">
+                  <i class="fa fa-check"></i>
+              </span>
+          </div>
+      </div>
+      <div [hidden]="Name.valid || Name.untouched">
+          <span class="text-danger"  *ngIf="Name.errors?.['required']" translate>You Must enter you Name</span>
+          <span class="text-danger" *ngIf="Name.errors?.['minlength']" translate> Name Must be more than 2 characters</span>
+      </div>
+  </div>
+  
+  <div class="form-group">
+      <label class="control-label" translate>Email</label>
+      <div class="input-group">
+          <input type="text" class="form-control" id="cEmail" name="cEmail" formControlName="Email"
+          [class.is-valid]="Email.valid"   [class.is-invalid]="Email.invalid && Email.touched" />
+          <div class="input-group-append" [hidden]="Email.untouched || !Email.valid" >
+              <span class="input-group-text">
+                  <i class="fa fa-check"></i>
+              </span>
+          </div>
+      </div>
+      <div [hidden]="Email.valid || Email.untouched">
+          <span class="text-danger"  *ngIf="Email.errors?.['required']" translate>You Must enter you Email</span>
+        
+      </div>
+  </div>
+  
+  
+ 
+  
+  <div class="form-group">
+      <label class="control-label" translate>Address</label>
+      <div class="input-group">
+          <input type="text" class="form-control" id="cAddress" name="cAddress" formControlName="Address"
+          [class.is-valid]="Address.valid"   [class.is-invalid]="Address.invalid && Address.touched" />
+          <div class="input-group-append" [hidden]="Address.untouched || !Address.valid" >
+              <span class="input-group-text">
+                  <i class="fa fa-check"></i>
+              </span>
+          </div>
+      </div>
+      <div [hidden]="Address.valid || Address.untouched">
+          <span class="text-danger"  *ngIf="Address.errors?.['required']" translate>You Must enter you Address</span>
+        
+      </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label" translate>Title</label>
+    <div class="input-group">
+        <input type="text" class="form-control" id="Title" name="Title" formControlName="Title"
+        [class.is-valid]="Title.valid"   [class.is-invalid]="Title.invalid && Title.touched" />
+        <div class="input-group-append" [hidden]="Title.untouched || !Title.valid" >
+            <span class="input-group-text">
+                <i class="fa fa-check"></i>
+            </span>
+        </div>
+    </div>
+    <div [hidden]="Title.valid || Title.untouched">
+        <span class="text-danger"  *ngIf="Title.errors?.['required']" translate>You Must enter you Title</span>
+      
+    </div>
+</div>
+
+ 
+
+<div class="form-group">
+    <label class="control-label" translate>Salary</label>
+    <div class="input-group">
+        <input type="text" class="form-control" id="Salary" name="Salary" formControlName="Salary"
+        [class.is-valid]="Salary.valid"   [class.is-invalid]="Salary.invalid && Salary.touched" />
+        <div class="input-group-append" [hidden]="Salary.untouched || !Salary.valid" >
+            <span class="input-group-text">
+                <i class="fa fa-check"></i>
+            </span>
+        </div>
+    </div>
+    <div [hidden]="Salary.valid || Salary.untouched">
+        <span class="text-danger"  *ngIf="Salary.errors?.['required']" translate>You Must enter you Salary</span>
+      
+    </div>
+</div>
+
+
+<div class="form-group">
+    <label class="control-label" translate>Experience Years</label>
+    <div class="input-group">
+        <input type="text" class="form-control" id="ExperienceYears" name="ExperienceYears" formControlName="ExperienceYears"
+        [class.is-valid]="ExperienceYears.valid"   [class.is-invalid]="ExperienceYears.invalid && ExperienceYears.touched" />
+        <div class="input-group-append" [hidden]="ExperienceYears.untouched || !ExperienceYears.valid" >
+            <span class="input-group-text">
+                <i class="fa fa-check"></i>
+            </span>
+        </div>
+    </div>
+    <div [hidden]="ExperienceYears.valid || ExperienceYears.untouched">
+        <span class="text-danger"  *ngIf="ExperienceYears.errors?.['required']" translate>You Must enter you ExperienceYears</span>
+      
+    </div>
+</div>
+ 
+ 
+ 
+ 
+ 
+  <br/>
+
+  <button type="submit" class="btn btn-secondary" translate>Add New Employee</button>  || 
+  <a class="btn btn-info" routerLink="/Customer/Home" translate >Back</a>
+  </form>
+  
+  
+  

@@ -1,0 +1,47 @@
+<br />
+<br />
+
+
+<div class="container" [dir]="pageDirection">
+<a class=" btn btn-primary m-4"  style="width:200px; text-align: center;" routerLink="/employee/create" translate>Add New Employee</a>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr translate>
+
+      
+
+            <td>#</td>
+            <td translate>Name</td>
+            
+            
+            <td translate>Email</td>
+            <td translate>Address</td>
+            <td translate>Title</td>
+            <td translate>Salary</td>
+            <td translate>Experience Years</td>
+      
+            <td></td>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of AllEmployees">
+            <td>{{i.Id}}</td>
+            <td>{{i.Name}}</td>
+            <td>{{i.Email}}</td>
+            <td>{{i.Address}}</td>
+            <td>{{i.Title}}</td>
+            <td>{{i.Salary}}</td>
+            <td>{{i.ExperienceYears}}</td>
+            <td>
+                <a class="btn btn-info" routerLink="/employee/details/{{i.Id}}" translate>Details </a> |
+                <a class="btn btn-secondary" routerLink="/employee/update/{{i.Id}}" translate>Edit</a> |
+                <a class="btn btn-danger"  (click)="Delete(i.Id-1)" translate>Delete</a>
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<br>
+<br>

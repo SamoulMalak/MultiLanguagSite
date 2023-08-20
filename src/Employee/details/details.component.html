@@ -1,0 +1,32 @@
+
+
+
+<div class="container" style=" height: 100vh;" [dir]=" pageDirection" >
+    <div class="row" >
+        <div class="col-md-12 mx-auto">
+          <div class="card mt-4">
+            <div class="card-header" >
+              <h4 translate>Employee Information</h4>
+            </div>
+            <div class="card-body" >
+              <div class="row">
+                <div class="col-12">
+                  <ul class="list-group" >
+                    <li class="list-group-item" translate>Id <span  [ngClass]="pageDirection=='ltr' ? 'float-end' : 'float-start'">{{EmployeeItem?.Id}}</span></li>
+                    <li class="list-group-item" translate>Name <span [ngClass]="pageDirection=='ltr' ? 'float-end' : 'float-start'" >{{EmployeeItem?.Name}}</span></li>
+                    <li class="list-group-item" translate>Email<span [ngClass]="pageDirection=='ltr' ? 'float-end' : 'float-start'">{{EmployeeItem?.Email}}</span></li>
+                    <li class="list-group-item" translate>Address<span [ngClass]="pageDirection=='ltr' ? 'float-end' : 'float-start'">{{EmployeeItem?.Address}}</span></li>
+                    <li class="list-group-item" translate>Title <span [ngClass]="pageDirection=='ltr' ? 'float-end' : 'float-start'">{{EmployeeItem?.Title}}</span></li>
+                    <li class="list-group-item" translate>Salary <span [ngClass]="pageDirection=='ltr' ? 'float-end' : 'float-start'">{{EmployeeItem?.Salary}}</span></li>
+                    <li class="list-group-item" translate>Experience Years <span [ngClass]="pageDirection=='ltr' ? 'float-end' : 'float-start'">{{EmployeeItem?.ExperienceYears}}</span></li>
+            
+                  </ul>
+                </div>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-info" routerLink="/employee/Home" translate >Back</a>
+  </div>

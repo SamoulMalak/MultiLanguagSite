@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-primary bg-primary border-bottom box-shadow mb-3">
+
+  <div class="container">
+   
+    <a
+      class="navbar-brand"
+ 
+      routerLinkActive="bg-secondary"
+      style="color: white"
+      translate
+    >
+      Multi Language Site
+    </a>
+    <a
+      class="navbar-brand"
+      routerLink="/employee"
+      routerLinkActive="bg-secondary"
+      style="color: white"
+      translate
+    >
+      Employees
+    </a>
+  
+    <select #sel class="nav-contro bg-primary" (change)="ChoiceLanguage(sel.value);"  style="color: white">
+      <option value="en"[selected]="selectedLanguage=='en'">English</option>
+      <option value="ar"  [selected]="selectedLanguage=='ar'">العربية</option>
+    </select>
+ 
+  </div>
+</nav>
